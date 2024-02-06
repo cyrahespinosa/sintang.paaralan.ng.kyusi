@@ -1,0 +1,61 @@
+.contacts{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    border-top-style: solid;
+    border-width: 0.7px;
+    border-color: lightgray;
+    padding-top: 50px;
+    padding-bottom: 38px;
+    justify-content: center;
+}
+
+.data-section{
+    width: 300px;
+    display: flex;
+}
+
+.data-section a, .contacts-section a, .address p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: gray;
+    transition-duration: 0.4s;
+    display: flex;
+    text-decoration: none;
+}
+
+.data-section a:hover, .contacts-section a:hover{
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contacts-section{
+    width: 300px;
+    display: flex;
+}
+
+.address{
+    width: 500px;
+    display: flex;
+}
+
+.data-section, .contacts-section, .address{
+    flex-direction: column;
+}
+
+h3 {
+    margin-bottom: 8px;
+    color: maroon;
+}
+
+.school-2{
+    font-size: 22px;
+    color: maroon;
+    font-weight: bold; 
+    line-height: 1;
+    padding-right: 50px;
+    font-family: 'Poppins', sans-serif;
+}

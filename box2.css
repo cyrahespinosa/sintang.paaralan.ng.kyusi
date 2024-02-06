@@ -1,0 +1,108 @@
+.box2{
+    display: flex;
+    max-width: 900px;
+    max-height: 900px;
+    min-height: 650px;
+    min-width: 650px;
+}
+
+.box2ctn {
+    width: 650px;
+    height: 650px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 18px; /* Adjust gap between boxes as needed */
+}
+
+.hymn,
+.extra,
+.sis,
+.vmgo {
+    border-radius: 37px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex: 1;
+    position: relative;
+
+}
+
+.hymn {
+    background-image: url('flag.jpg'); 
+    transition-duration: 0.3s;
+}
+
+.hymn:hover{
+    filter: brightness(130%);
+    cursor: pointer;
+}
+
+.vmgo {
+    background-image: url('diploma.jpg');
+    transition-duration: 0.3s;
+}
+
+.vmgo:hover{
+    filter: brightness(130%);
+    cursor: pointer;
+}
+
+.sis {
+    background-image: url('sispic.jpg');
+    transition-duration: 0.3s;
+}
+
+.sis:hover{
+    filter: brightness(130%);
+    cursor: pointer;
+}
+
+.extra {
+    background-image: url('blankpic.jpg'); /* Background photo for vmgo */
+}
+
+.puphymn{
+    align-self: flex-end;
+    color: white;
+    margin-right: 10px; 
+    position: absolute; 
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 10px;
+    padding-bottom: 12px;
+}
+
+.diploma{
+    align-self: flex-end;
+    color: white;
+    margin-right: 10px; 
+    position: absolute; 
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 10px;
+    padding-bottom: 12px;
+}
+
+.sisname{
+    align-self: flex-end;
+    color: white;
+    margin-right: 10px; 
+    position: absolute; 
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 10px;
+    padding-bottom: 12px;
+}

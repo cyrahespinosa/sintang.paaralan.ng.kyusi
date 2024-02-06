@@ -1,0 +1,56 @@
+/* Reset some default styles to improve cross-browser consistency */
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    background-color: rgb(200, 200, 200);
+    margin: 0;
+}
+
+.body1 {
+    margin-top: 12px;
+    margin-bottom: 30px;
+    padding-bottom: 1000px; /* This padding seems excessive, consider removing or adjusting */
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.innerbody {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line on smaller screens */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .box1, .box2 {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0; /* Remove margin on smaller screens */
+    }
+
+    .box1lower {
+        flex-direction: column; /* Stack elements in column on smaller screens */
+    }
+
+    .pylonbox {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .pylon {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .box2ctn {
+        gap: 5px; /* Adjust gap between boxes on smaller screens */
+    }
+}
